@@ -1,0 +1,14 @@
+.FilesContaier {
+}
+
+.VideoFiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.VideoSection,
+.PdfSection {
+  border: 1px solid #ccc;
+  margin: 1rem 0;
+  padding: 10px;
+}

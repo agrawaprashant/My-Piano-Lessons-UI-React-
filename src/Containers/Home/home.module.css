@@ -1,0 +1,47 @@
+.Navigate {
+  cursor: pointer;
+}
+
+.Navigate:hover {
+  text-decoration: underline;
+}
+
+.NavigationBar {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background: #555;
+  color: #fff;
+}
+
+.NavigationBar button {
+  margin-right: 10px;
+  border-radius: 2px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  outline: none;
+}
+
+.NavigationBar button:hover {
+  background-color: #cee1cd;
+  color: #444;
+  box-shadow: none;
+}
+
+.Heading {
+  text-align: center;
+  font-style: italic;
+  margin: 0 15px;
+  color: #555;
+  border-radius: 5px;
+}
+
+.Home {
+  margin: 2rem;
+  padding: 0.5rem 5rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(0, 0, 0, 0.3);
+}

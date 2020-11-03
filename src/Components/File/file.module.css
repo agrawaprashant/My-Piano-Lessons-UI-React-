@@ -1,0 +1,26 @@
+.File {
+  /* border: 1px solid #ccc; */
+  margin: 10px;
+  width: 120px;
+  height: 110px;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  display: block;
+}
+
+.File p {
+  font-size: 12px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.Icon {
+  margin-left: 0.8rem;
+}
+
+.File:hover {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3), -1px -1px 3px rgba(0, 0, 0, 0.3);
+  /* border: 1px solid #ddd; */
+  /* background-color: #f9f9f9; */
+}

@@ -1,0 +1,30 @@
+.VideoFile {
+  padding: 0;
+  line-height: 0;
+  margin: 2rem;
+  width: 300px;
+  cursor: pointer;
+}
+
+.Body img {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.Footer {
+  background-color: #131834;
+  color: #fff;
+  line-height: 1;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.VideoFile:hover {
+  transform: scale(1.01);
+}
+
+a {
+  text-decoration: none;
+}
