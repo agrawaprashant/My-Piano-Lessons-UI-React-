@@ -7,8 +7,8 @@ export class FilesContainer extends Component {
   render() {
     let { fileList } = this.props;
     fileList = fileList.sort((a, b) => {
-      const sn1 = parseInt(a.name.split(".")[0]);
-      const sn2 = parseInt(b.name.split(".")[0]);
+      const sn1 = parseInt(a.name.split(".")[0].replace(/[a-z A-Z .]/g, ""));
+      const sn2 = parseInt(b.name.split(".")[0].replace(/[a-z A-Z .]/g, ""));
       if (sn1 > sn2) return 1;
       else if (sn1 < sn2) return -1;
       else return 0;
