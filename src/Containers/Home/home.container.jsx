@@ -11,7 +11,7 @@ class Home extends React.Component {
   };
 
   componentDidMount() {
-    axios.get("http://192.168.1.10:5000/api/folder-structure").then((res) => {
+    axios.get("http://192.168.1.5:5000/api/folder-structure").then((res) => {
       const pageStack = [...this.state.pageStack];
       const currentDirectory = [...this.state.currentDirectory];
       pageStack.push(res.data);
@@ -88,7 +88,7 @@ class Home extends React.Component {
         key={i}
         className={classes.Navigate}
       >
-        {dir.length >20 ? dir.substring(0,20)+'...': dir}
+        {dir.length > 20 ? dir.substring(0, 20) + "..." : dir}
       </span>
     ));
     let navigator = [];
@@ -112,8 +112,18 @@ class Home extends React.Component {
           <h1>My Piano Lessons</h1>
         </div>
         <div className={classes.NavigationBar}>
-          <button disabled={this.state.pageStack.length === 1} onClick={this.backClickHandler}><i class="fas fa-arrow-left"></i></button>
-          <button disabled={this.state.forwardPageStack.length === 0} onClick={this.forwardClickHandler}><i class="fas fa-arrow-right"></i></button>
+          <button
+            disabled={this.state.pageStack.length === 1}
+            onClick={this.backClickHandler}
+          >
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button
+            disabled={this.state.forwardPageStack.length === 0}
+            onClick={this.forwardClickHandler}
+          >
+            <i class="fas fa-arrow-right"></i>
+          </button>
           {navigator}
         </div>
         {contentPane}
